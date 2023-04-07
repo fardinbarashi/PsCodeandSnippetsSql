@@ -1,0 +1,2 @@
+# PsSqlCodeandSnippets
+Just some snippets
