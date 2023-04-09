@@ -1,6 +1,6 @@
 Get-Content "C:\temp\Settings.ini" | foreach-object -begin {$h=@{}} -process { $k = [regex]::split($_,'='); if(($k[0].CompareTo("") -ne 0) -and ($k[0].StartsWith("[") -ne $True)) { $h.Add($k[0], $k[1]) } }
-$server        = $h.Get_Item("centralServer")
-$inventoryDB   = $h.Get_Item("inventoryDB")
+$server        = $h.Get_Item("NameOnCenteralServer")
+$inventoryDB   = $h.Get_Item("NameOnIventoryDB")
 
 if($server.length -eq 0){
     Write-Host "You must provide a value for the 'centralServer' in your Settings.ini file!!!" -BackgroundColor Red
