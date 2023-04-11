@@ -1,2 +1,2 @@
 # PsSqlCodeandSnippets
-Just some snippets
+Just some code and snippets for SQL
